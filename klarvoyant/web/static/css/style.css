@@ -1,6 +1,6 @@
 body {
     font-family: Arial;
-    background-color: #F4F4F4;
+    background-color: #FFFFFF;
 }
 .header {
     width: 100%;
@@ -186,7 +186,6 @@ ul.errorlist li {
     font-size: 13px;
     text-align: justify;
     color: #000000;
-    margin-top: 285px;
     margin-bottom: 30px;
 }
 .container .content a{
@@ -201,7 +200,6 @@ ul.errorlist li {
 
 #home_page .content {
     width: 100%;
-    margin-top: 400px;
 }
 #home_page .content #contents {
     width: 100%;
