@@ -9,21 +9,21 @@
             <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
             <link rel="stylesheet" href="/static/css/slideshow.css" type="text/css" />
         {% endblock css %}
-        {% block title %}
-            <title>Technomics Solutions</title>
-        {% endblock title %}
-        <meta name="description" content="Technomics solutions">
-        <meta name="author" content="Technomics solutions">
+        
+        <title>Klarvoyant - {% block title %}{% endblock title %}</title>
+        
+        <meta name="description" content="Klarvoyant">
+        <meta name="author" content="Klarvoyant">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         
         {% block extrahead %}{% endblock extrahead %}
         {% comment %}
         {% block facebook %}
-                <meta property="og:title" content="Technomics Solutions"/>
+                <meta property="og:title" content="Klarvoyant"/>
                 <meta property="og:type" content="company"/>
                 <meta property="og:url" content="{{ SITE_ROOT_URL }}"/>
                 <meta property="og:image" content=""/>
-                <meta property="og:site_name" content="Technomics Solutions"/>
+                <meta property="og:site_name" content="Klarvoyant"/>
                 <meta property="fb:admins" content=""/>
 
         {% endblock %}
@@ -48,7 +48,7 @@
                             </div>
                         {% endblock banner %}
                         {% block content %}
-                            <h1>Welcome Technomics Solutions</h1>
+                            <h1>Welcome Klarvoyant</h1>
                         {% endblock content %}
                     </div>
                     <div class="footer" >
