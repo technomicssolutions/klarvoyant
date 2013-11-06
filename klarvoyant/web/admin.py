@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.db import models
-from models import Dates Logo, Blog, Slideshow, Slide, Menu, Submenu, ContactUs
-from adminthumbnail import AdminImageWidget
+from models import Dates, Logo, Slideshow, Slide, Menu, Submenu, Contactus
+from adminthumnail import AdminImageWidget
 from django.views.generic.list import ListView
 
 class ContactusAdmin(admin.ModelAdmin):
