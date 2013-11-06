@@ -41,3 +41,4 @@ class MenuAdmin(admin.ModelAdmin):
 admin.site.register(Slideshow, SlideshowAdmin)
 admin.site.register(Menu, MenuAdmin)
 admin.site.register(Contactus, ContactusAdmin)
+admin.site.register(Logo)

@@ -15,20 +15,25 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from datetime import datetime
 from django.utils import simplejson
 
-from web.models import Contactus, Dates, Slideshow, Menu
+from web.models import Contactus, Dates, Slideshow, Menu, Logo
 from web.forms import ContactUsForm
 
+menu_obj = Menu.objects.all().order_by('order')
+try:
+    logo = Logo.objects.all()[0]
+except:
+    logo = ''
 def home(request):
     print "in home"
     try:
         if Slideshow.objects.count():
             slideshow = Slideshow.objects.latest('id')
         else:
-            slideshow = []
-        menu_obj = Menu.objects.all().order_by('order')
+            slideshow = []        
         context = { 
             'slideshow' : slideshow,
-            'menu_obj': menu_obj
+            'menu_obj': menu_obj,
+            'logo': logo
         }
     except:
         context = {}
@@ -52,6 +57,8 @@ def rendermenu(request, menuslug):
         context = {
             'aboutus': aboutus,
             'form': form,
+            'menu_obj': menu_obj,
+            'logo': logo
         }
         return render(request, template, context)
 
@@ -71,6 +78,8 @@ def rendersubmenu(request, menu_slug, submenuslug):
             context = {
                 'form': freshersform,
                 'vacancies': vacancies,
+                'menu_obj': menu_obj,
+                'logo': logo
             }
             return render(request, template, context)
 
@@ -83,6 +92,8 @@ class ContactUsView(View):
         form = ContactUsForm()
         context = {
             'form': form,
+            'menu_obj': menu_obj,
+            'logo': logo
         }
         return render(request,'contact_us.html', context)
 
@@ -104,10 +115,14 @@ class ContactUsView(View):
                 context ={
                     'form': form,
                     'message': 'Your message sent successfully',
+                    'menu_obj': menu_obj,
+                    'logo': logo
                 }
             else:
                 context ={
                     'form': form,
+                    'menu_obj': menu_obj,
+                    'logo': logo
                 }
         return render(request, 'contact_us.html', context)
         
