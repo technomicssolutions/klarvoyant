@@ -1,0 +1,25 @@
+
+<div id="testimonial_bg" >
+    <div class="footer_links">
+        {% for menu in context_menu %}                        
+            <ul><a href="{% url 'render_menupage' menuslug=menu.slug %}">{{ menu.title }}</a>           
+                {% for submenu in menu.submenu_set.all %}
+                    <li><a href="{% url 'render_submenupage' menu_slug=menu.slug submenuslug=submenu.slug %}">{{ submenu.title }}</a></li>
+                {% endfor %}                    
+            </ul>                        
+        {% endfor %}
+    </div>
+    <div class="clear"></div>
+</div>
+
+<div id="footer_below" >        
+    <div id="links">
+        <a href="https://www.facebook.com/pages/Technomics-Software-Solutions/503210896439006"><img src="/static/images/facebook.jpg" id="fb" ></a>
+        <a href="https://twitter.com/Technomicss"><img src="/static/images/twitter.jpg" id="twtr" ></a>
+        <!-- <a href="#"><img src="/static/images/dribbble.jpg" id="dribl" ></a>
+        <a href="#"><img src="/static/images/behance.jpg" id="bhanc" ></a> -->
+        <a href="http://www.youtube.com/watch?v=dBwzhLG4KQQ"><img src="/static/images/youTube.jpg" id="utub" ></a>
+        <!-- <a href="#"><img src="/static/images/gplus.jpg" id="gplus" ></a> -->
+    </div>
+    <p> Copyright &copy; 2013 Technomics Solutions PVT Limited </p>
+</div>

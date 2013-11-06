@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load media %}
+{% load thumbnail %}
+{% block title %}<title> Contact Us | Technomics Solutions </title>{% endblock title %}
+{% block body_id %}contactus{% endblock body_id %}
+{% block banner %}
+    <div class="banner"></div>
+{% endblock banner %}
+
+
+{% block content %}
+    <div id="contactus_section">
+        <p> For more information regarding our IT services please contact us.</p>
+        <div id="contactus">
+            <h3> Technomics Solutions Pvt.Ltd. </h3>
+            <h4> Cochin Office :</h4>
+            <p> 
+                1 Floor, Mundukottackal Estate SA Road,<br>
+                Kadavanthra Jn, Cochin<br>
+                Kerala, India - 682020
+            </p> 
+            <p>
+                +91-0484-4064333 <br>
+                +91-9846128353<br><br>
+                Email : info@technomicssolutions.com
+            </p>
+        </div> 
+        <div id="contact_us" >
+            {% if form %}
+                {% if message %}
+                    <h1> {{message }}</h1>
+                {% endif %}
+                <form id="contact_form" action="{% url 'contactus' %}" method="post">{% csrf_token %}
+                    {{ form}} 
+                    <input type="submit" name="send" id="send" value="">
+                </form>
+            {% endif %}
+        </div>
+        <div class="clear"></div>
+    </div>
+{% endblock %}

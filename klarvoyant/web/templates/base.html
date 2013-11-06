@@ -1,0 +1,66 @@
+<!doctype html>
+{% load media %}
+
+<html class="no-js" lang="en"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="shortcut icon" href="/static/images/logo_symbol.png" type="image/x-icon" />
+        
+        {% block title %}
+            <title>Technomics Solutions</title>
+        {% endblock title %}
+        <meta name="description" content="Technomics solutions">
+        <meta name="author" content="Technomics solutions">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        {% include_media 'mootools.js' %}
+        {% include_media 'main.css' %}
+        {% include_media 'main.js' %}
+        
+        {% block extrahead %}{% endblock extrahead %}
+        {% comment %}
+        {% block facebook %}
+                <meta property="og:title" content="Technomics Solutions"/>
+                <meta property="og:type" content="company"/>
+                <meta property="og:url" content="{{ SITE_ROOT_URL }}"/>
+                <meta property="og:image" content=""/>
+                <meta property="og:site_name" content="Technomics Solutions"/>
+                <meta property="fb:admins" content=""/>
+
+        {% endblock %}
+        {% endcomment %}
+    </head>
+
+    <body id="{% block body_id %}base{% endblock body_id %}">
+        <div class="container" >
+            {% block body %}
+                
+                    {% spaceless %}
+                    <div class="header" >
+                        {% block header %}
+                            <!-- Header -->
+                            {% include 'header.html' %}
+                        {% endblock header %}
+                    </div>
+                    {% block banner %}
+                        <div class="banner" >
+                            <!-- Banner -->
+                        </div>
+                    {% endblock banner %}
+                    <div class="content" >
+                        {% block content %}
+                            <h1>Welcome Technomics Solutions</h1>
+                        {% endblock content %}
+                    </div>
+                    <div class="footer" >
+                        {% block footer %}
+                           <!-- Footer -->
+                           {% include 'footer.html' %}
+                        {% endblock footer %}
+                    </div>
+                    {% endspaceless %}
+                
+            {% endblock body %}
+        </div>       
+    </body>
+</html>

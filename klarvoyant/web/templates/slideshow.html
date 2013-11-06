@@ -1,0 +1,25 @@
+
+<div  class= "slide_banner" id="banner" >
+    <div id = "slideshow" class = "slideshow">
+        {% if slideshow %}
+            {% for slide in slideshow.slide_set.all %}
+                <img src="/site_media/{{ slide.image }}" width="1550" height="477">
+                <div id="slogan" >
+                    {% autoescape off %}
+                        {{ slide.text | safe }} 
+                    {% endautoescape %} 
+                </div>   
+            {% endfor %}
+        {% endif %}
+    </div>
+    <div id ="controls" >
+        <div class = "bullets" >
+            <a style="background: url('/site_media/{{ slideshow.bullet_active }}') no-repeat"></a>
+            <a style="background: url('/site_media/{{ slideshow.bullet_inactive }}') no-repeat"></a>
+            <a style="background: url('/site_media/{{ slideshow.bullet_inactive }}') no-repeat"></a>
+            <span class="active_hdn hidden" style="background: url('/site_media/{{ slideshow.bullet_active }}') no-repeat"></span>
+            <span class="inactive_hdn hidden" style="background: url('/site_media/{{ slideshow.bullet_inactive }}') no-repeat"></span>
+        </div>
+    </div> 
+</div> 
+

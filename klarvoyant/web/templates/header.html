@@ -1,0 +1,25 @@
+{% load base_tags %}
+<div class="header" >
+    {% if context_header %}
+        <a href="{% url 'home' %}" class="logo" ><img src="/site_media/{{ context_header.logo }} " alt="logo"></a>
+        <div class="contact_no" >
+            <!-- Background image -->
+            <p>{{ context_header.customer_care }}</p>
+        </div>
+        <div class="menus">
+            {% if context_menu %}
+            <ul class="menu">
+                {% for menu in context_menu %}                        
+                    <li clas="menu_li"><a href="{% url 'render_menupage' menuslug=menu.slug %}">{{ menu.title|uppercase }}</a>
+                        <ul class="submenu">
+                            {% for submenu in menu.submenu_set.all %}
+                                <li class="submenu_li"><a href="{% url 'render_submenupage' menu_slug=menu.slug submenuslug=submenu.slug %}">{{ submenu.title|uppercase }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>                        
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>
