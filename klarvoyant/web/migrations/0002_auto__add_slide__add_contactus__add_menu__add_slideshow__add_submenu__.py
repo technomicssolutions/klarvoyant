@@ -27,12 +27,14 @@ class Migration(SchemaMigration):
         ))
         db.send_create_signal(u'web', ['Contactus'])
 
-        # Adding model 'Logo'
-        db.create_table(u'web_logo', (
+        # Adding model 'Menu'
+        db.create_table(u'web_menu', (
             (u'dates_ptr', self.gf('django.db.models.fields.related.OneToOneField')(to=orm['web.Dates'], unique=True, primary_key=True)),
-            ('logo', self.gf('django.db.models.fields.files.ImageField')(max_length=100)),
+            ('title', self.gf('django.db.models.fields.CharField')(max_length=50)),
+            ('slug', self.gf('django.db.models.fields.CharField')(max_length=100)),
+            ('order', self.gf('django.db.models.fields.IntegerField')(default='1', max_length=10)),
         ))
-        db.send_create_signal(u'web', ['Logo'])
+        db.send_create_signal(u'web', ['Menu'])
 
         # Adding model 'Slideshow'
         db.create_table(u'web_slideshow', (
@@ -63,14 +65,12 @@ class Migration(SchemaMigration):
         ))
         db.send_create_signal(u'web', ['Dates'])
 
-        # Adding model 'Menu'
-        db.create_table(u'web_menu', (
+        # Adding model 'Logo'
+        db.create_table(u'web_logo', (
             (u'dates_ptr', self.gf('django.db.models.fields.related.OneToOneField')(to=orm['web.Dates'], unique=True, primary_key=True)),
-            ('title', self.gf('django.db.models.fields.CharField')(default='title', max_length=50)),
-            ('slug', self.gf('django.db.models.fields.CharField')(default='title', max_length=100)),
-            ('order', self.gf('django.db.models.fields.IntegerField')(default='1', max_length=10)),
+            ('logo', self.gf('django.db.models.fields.files.ImageField')(max_length=100)),
         ))
-        db.send_create_signal(u'web', ['Menu'])
+        db.send_create_signal(u'web', ['Logo'])
 
     def backwards(self, orm):
         # Deleting model 'Slide'
@@ -79,8 +79,8 @@ class Migration(SchemaMigration):
         # Deleting model 'Contactus'
         db.delete_table(u'web_contactus')
 
-        # Deleting model 'Logo'
-        db.delete_table(u'web_logo')
+        # Deleting model 'Menu'
+        db.delete_table(u'web_menu')
 
         # Deleting model 'Slideshow'
         db.delete_table(u'web_slideshow')
@@ -91,8 +91,8 @@ class Migration(SchemaMigration):
         # Deleting model 'Dates'
         db.delete_table(u'web_dates')
 
-        # Deleting model 'Menu'
-        db.delete_table(u'web_menu')
+        # Deleting model 'Logo'
+        db.delete_table(u'web_logo')
 
     models = {
         u'web.contactus': {
@@ -118,8 +118,8 @@ class Migration(SchemaMigration):
             'Meta': {'object_name': 'Menu', '_ormbases': [u'web.Dates']},
             u'dates_ptr': ('django.db.models.fields.related.OneToOneField', [], {'to': u"orm['web.Dates']", 'unique': 'True', 'primary_key': 'True'}),
             'order': ('django.db.models.fields.IntegerField', [], {'default': "'1'", 'max_length': '10'}),
-            'slug': ('django.db.models.fields.CharField', [], {'default': "'title'", 'max_length': '100'}),
-            'title': ('django.db.models.fields.CharField', [], {'default': "'title'", 'max_length': '50'})
+            'slug': ('django.db.models.fields.CharField', [], {'max_length': '100'}),
+            'title': ('django.db.models.fields.CharField', [], {'max_length': '50'})
         },
         u'web.slide': {
             'Meta': {'object_name': 'Slide', '_ormbases': [u'web.Dates']},

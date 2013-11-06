@@ -274,6 +274,8 @@ ul.errorlist {
 }
 .content {
     clear: both;
+    min-height: 300px;
+    width: 100%;
 }
 #aboutus {
     .banner {

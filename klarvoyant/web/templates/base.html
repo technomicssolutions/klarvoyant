@@ -40,13 +40,13 @@
                             <!-- Header -->
                             {% include 'header.html' %}
                         {% endblock header %}
-                    </div>
-                    {% block banner %}
-                        <div class="banner" >
-                            <!-- Banner -->
-                        </div>
-                    {% endblock banner %}
+                    </div>                    
                     <div class="content" >
+                        {% block banner %}
+                            <div class="banner" >
+                                <!-- Banner -->
+                            </div>
+                        {% endblock banner %}
                         {% block content %}
                             <h1>Welcome Technomics Solutions</h1>
                         {% endblock content %}

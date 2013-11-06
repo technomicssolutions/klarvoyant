@@ -19,14 +19,17 @@ from web.models import Contactus, Dates, Slideshow, Menu
 from web.forms import ContactUsForm
 
 def home(request):
+    print "in home"
     try:
         latest_content = Feature.objects.latest('id')
         latest_events = Newsevents.objects.latest('id')
         slideshow = Slideshow.objects.latest('id')
+        menu_obj = Menu.objects.all().order_by('order');
         context = { 
             'latest_content': latest_content,
             'latest_events': latest_events,
             'slideshow' : slideshow,
+            'menu_obj': menu_obj
         }
     except:
         context = {}
