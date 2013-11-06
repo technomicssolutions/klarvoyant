@@ -38,6 +38,14 @@ class MenuAdmin(admin.ModelAdmin):
     list_display = ('title', 'slug', 'order')
     exclude = ('slug',)
 
+class LogoAdmin(admin.ModelAdmin):
+    list_display = ['logo']
+    formfield_overrides = {
+        models.ImageField: {'widget': AdminImageWidget()},
+    }
+
 admin.site.register(Slideshow, SlideshowAdmin)
 admin.site.register(Menu, MenuAdmin)
 admin.site.register(Contactus, ContactusAdmin)
+admin.site.register(Logo, LogoAdmin)
+
