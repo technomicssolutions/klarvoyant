@@ -378,3 +378,64 @@ input[type="submit"]::-moz-focus-inner,
 input[type="file"] > input[type="button"]::-moz-focus-inner {
     border: none;
 }
+#manufacturing .container .content {
+    height: 500px;
+}
+#manufacturing .container .content .right_image {
+    display: block;
+    float:left;
+    width: 49%;
+    height: auto;
+    margin: 0 0 0 15px;
+}
+#manufacturing .container .content .left_contents {
+    display: block;
+    float: left;
+    width: 49%;
+    height: auto;
+}
+#manufacturing .container .content .left_contents p {
+    color: #3C3C3C;
+    font-family: "Trebuchet MS";
+    margin-top: 0;
+}
+#manufacturing .banner_image {
+    display: block;
+    margin-bottom: 15px;
+}
+#manufacturing .banner_image img {
+    margin: auto;
+}
+#manufacturing .manufacturing_head {
+    color: #164751;
+    font: bold 15px/30px "Trebuchet MS";
+}
+#cro .cro_head {
+    color: #164751;
+    font: bold 15px/30px "Trebuchet MS";
+}
+#cro .left_contents {
+    float: left;
+    width: 59%;
+    height: auto;
+}
+#cro .container .content .right_image {
+    display: block;
+    float:left;
+    width: 39%;
+    height: auto;
+    margin: 0 0 0 15px;
+}
+#cro .container .content {
+    height: 735px;
+}
+#cro .container .content .left_contents p {
+    color: #3C3C3C;
+    font-family: "Trebuchet MS";
+    margin-top: 0;
+}
+#cro .container .content .left_contents ol li {
+    font-weight: bold;
+    font-family: "Trebuchet MS";
+    color: #3C3C3C;
+}
