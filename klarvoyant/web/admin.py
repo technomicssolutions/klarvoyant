@@ -35,7 +35,7 @@ class SubmenuInline(admin.TabularInline):
 
 class MenuAdmin(admin.ModelAdmin):
     inlines = [SubmenuInline]
-    list_display = ('title', 'slug', 'order')
+    list_display = ('title', 'slug', 'order', 'template')
     exclude = ('slug',)
 
 class LogoAdmin(admin.ModelAdmin):

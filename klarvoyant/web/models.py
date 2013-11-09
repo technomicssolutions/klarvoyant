@@ -67,6 +67,7 @@ class Menu(Dates):
     title = models.CharField('Menu', max_length = 50, help_text = 'Name of the menu')
     slug = models.CharField('Slug', max_length = 100, help_text = 'Slug of the menu')
     order = models.IntegerField('Order', max_length = 10, default = '1', help_text = 'Order of the menus')
+    template = models.CharField('Template Name', max_length = 100, default = 'name of the template', help_text= 'Name of the Template')
     # banner_image = models.ImageField(upload_to='uploads/images/', help_text="Upload banner to be displayed in the corresponding page")
     
     class Meta:

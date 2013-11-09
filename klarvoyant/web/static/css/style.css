@@ -438,4 +438,49 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     font-weight: bold;
     font-family: "Trebuchet MS";
     color: #3C3C3C;
+} 
+#consulting .left_contents {
+    float: left;
+    width: 49%;
+    height: auto;
+}
+#consulting .container .content .right_image {
+    display: block;
+    float:right;
+    width: 49%;
+    height: auto;
+    margin: 0 0 0 15px;
+}
+#consulting .container .content {
+    height: 675px;
+}
+#consulting .consulting_head {
+    color: #164751;
+    font: bold 15px/30px "Trebuchet MS";
+}
+#core_values .container .content {
+    height: 1080px;
+}
+#core_values .core_values_head {
+    color: #164751;
+    font: bold 15px/30px "Trebuchet MS";
+}
+#core_values .container .content p {
+    color: #3C3C3C;
+    font-family: "Trebuchet MS";
+    margin-top: 0;
+}
+#core_values .container .content .contents .content_top p {
+    color: #3C3C3C;
+    font-family: "Trebuchet MS";
+    margin-top: 0;
+}
+#core_values .container .content .contents .content_top ul li {
+    list-style: none;
+    font-weight: normal;
+    font-family: "Trebuchet MS";
+    color: #3C3C3C;
+}
+#core_values .container .content .contents .content_top ul li h4 {
+    margin: 3px;
 }

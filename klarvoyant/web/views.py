@@ -24,7 +24,6 @@ try:
 except:
     logo = ''
 def home(request):
-    print "in home"
     try:
         if Slideshow.objects.count():
             slideshow = Slideshow.objects.latest('id')
@@ -42,16 +41,18 @@ def home(request):
     
 def rendermenu(request, menuslug):
     if menuslug:
-        template = "%s.html" % menuslug
         aboutus = ''
         form = ''
         menu = Menu.objects.get(slug=menuslug)
+        template = menu.template
         sub_menus = menu.submenu_set.all()
         if sub_menus.count():
             return rendersubmenu(request, menuslug, sub_menus[0].slug)
         
         if menuslug == 'about_us':            
             aboutus = Aboutus.objects.latest('id')
+        elif menuslug == 'home':
+            return home(request)
         elif menuslug == 'contact_us':
             form = ContactUsForm()
         context = {
