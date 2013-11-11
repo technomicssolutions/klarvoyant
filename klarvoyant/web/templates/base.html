@@ -9,7 +9,12 @@
             <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
             <link rel="stylesheet" href="/static/css/slideshow.css" type="text/css" />
         {% endblock css %}
-        
+        {% block script %}
+            <script type="text/javascript" src="/static/js/mootools-core-1.4.2-full-compat-yc.js"></script>
+            <script type="text/javascript" src="/static/js/mootools-more-1.4.0.1.js"></script>
+            <script type="text/javascript" src="/static/js/slideshow.js"></script>
+            <script type="text/javascript" src="/static/js/core_values.js"></script>
+        {% endblock script %}
         <title>Klarvoyant - {% block title %}{% endblock title %}</title>
         
         <meta name="description" content="Klarvoyant">

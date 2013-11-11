@@ -380,6 +380,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     border: none;
 }
 
+
 .absolute_header {
     border: 1px solid #FF0000;
     height: 50px;
@@ -414,3 +415,227 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     font-size: 15px;
     font-weight: bold;
 }
+
+#manufacturing .container .content {
+    height: 500px;
+}
+#manufacturing .container .content .right_image {
+    display: block;
+    float:left;
+    width: 49%;
+    height: auto;
+    margin: 0 0 0 15px;
+}
+#manufacturing .container .content .left_contents {
+    display: block;
+    float: left;
+    width: 49%;
+    height: auto;
+}
+#manufacturing .container .content .left_contents p {
+    color: #3C3C3C;
+    font-family: "Trebuchet MS";
+    margin-top: 0;
+}
+#manufacturing .banner_image {
+    display: block;
+    margin-bottom: 15px;
+}
+#manufacturing .banner_image img {
+    margin: auto;
+}
+#manufacturing .manufacturing_head {
+    color: #164751;
+    font: bold 15px/30px "Trebuchet MS";
+}
+#cro .cro_head {
+    color: #164751;
+    font: bold 15px/30px "Trebuchet MS";
+}
+#cro .left_contents {
+    float: left;
+    width: 59%;
+    height: auto;
+}
+#cro .container .content .right_image {
+    display: block;
+    float:left;
+    width: 39%;
+    height: auto;
+    margin: 0 0 0 15px;
+}
+#cro .container .content {
+    height: 735px;
+}
+#cro .container .content .left_contents p {
+    color: #3C3C3C;
+    font-family: "Trebuchet MS";
+    margin-top: 0;
+}
+#cro .container .content .left_contents ol li {
+    font-weight: bold;
+    font-family: "Trebuchet MS";
+    color: #3C3C3C;
+} 
+#consulting .left_contents {
+    float: left;
+    width: 49%;
+    height: auto;
+}
+#consulting .container .content .right_image {
+    display: block;
+    float:right;
+    width: 49%;
+    height: auto;
+    margin: 0 0 0 15px;
+}
+#consulting .container .content {
+    height: 675px;
+}
+#consulting .consulting_head {
+    color: #164751;
+    font: bold 15px/30px "Trebuchet MS";
+}
+#core_values .container .content {
+    height: 1080px;
+}
+#core_values .core_values_head {
+    color: #164751;
+    font: bold 15px/30px "Trebuchet MS";
+}
+#core_values .container .content p {
+    color: #3C3C3C;
+    font-family: "Trebuchet MS";
+    margin-top: 0;
+}
+#core_values .container .content .contents .content_top p {
+    color: #3C3C3C;
+    font-family: "Trebuchet MS";
+    margin-top: 0;
+}
+#core_values .container .content .contents .content_top ul li {
+    list-style: none;
+    font-weight: normal;
+    font-family: "Trebuchet MS";
+    color: #3C3C3C;
+}
+#core_values .container .content .contents .content_top ul li h4 {
+    margin: 3px;
+}
+#scientific_info .contents {
+    height: 600px;
+}
+#scientific_info .info_contents ul {
+    display: block;
+    height: 21px;
+    width: 593px;
+}
+#scientific_info .info_contents ul li {
+    float: left;
+    height: 21px;
+    list-style: none outside none;
+    padding: 0 8px;
+    position: relative;
+    border: 1px solid #000000;
+    border-bottom: none;
+    margin: 0 4px 0 0;
+}
+#scientific_info .info_contents ul li a {
+    color: #6C77C0;
+    display: block;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 3px 0 0 0;
+}
+#scientific_info .info_contents ul li:hover {
+    float: left;
+    height: 21px;
+    list-style: none outside none;
+    padding: 0 8px;
+    position: relative;
+    border: 1px solid #000000;
+    border-bottom: none;
+    margin: 0 4px 0 0;
+    background-color: #AAAAEE;
+    color: #000000;
+}
+#scientific_info .info_contents ul li a:hover {
+    display: block;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 3px 0 0 0;
+    background-color: #AAAAEE;
+    color: #000000;
+}
+#scientific_info .nephro_div p a {
+    color: #595858;
+    font: 13px/26px "Trebuchet MS";
+    text-decoration: underline;
+}
+#scientific_info .nephro_div p {
+    margin-left: 34px;
+}
+#scientific_info .nephro_div {
+    border: 1px solid #000000;
+    height: auto;
+    margin-left: 23px;
+    margin-top: -11px;
+    width: auto;
+}
+#scientific_info .fertility_div {
+    color: #595858;
+    font: 13px/26px "Trebuchet MS";
+    padding: 3px 15px;
+    text-align: justify;
+    text-decoration: none;
+    border: 1px solid #000000;
+    height: auto;
+    margin-left: 23px;
+    margin-top: -11px;
+    width: auto;
+}
+#scientific_info .fertility_div h2{
+    color: #164751;
+    font: bold 15px/30px "Trebuchet MS";
+}
+#scientific_info .fertility_div .top_content {
+    margin: 0 0 0 20px;
+}
+#scientific_info .fertility_div .top_content a {
+    color: #595858;
+    text-decoration: underline;
+}
+#scientific_info .fertility_div .middle_content {
+    color: #595858;
+    font: 13px/26px "Trebuchet MS";
+    text-decoration: underline;
+    margin: 0 0 0 20px;
+}
+#scientific_info .fertility_div .middle_content a {
+    color: #595858;
+}
+#scientific_info .fertility_div .bottom_content {
+    font: 13px/26px "Trebuchet MS";
+    text-decoration: underline;
+    margin: 0 0 0 20px;
+}
+#scientific_info .fertility_div .bottom_content a {
+    color: #595858;
+}
+#scientific_info .news_div {
+    color: #595858;
+    font: 13px/26px "Trebuchet MS";
+    padding: 3px 15px;
+    text-align: justify;
+    text-decoration: none;
+    border: 1px solid #000000;
+    height: auto;
+    margin-left: 23px;
+    margin-top: -11px;
+    width: auto;
+}
+#scientific_info .news_div h2{
+    color: #164751;
+    font: bold 15px/30px "Trebuchet MS";
+}
+
