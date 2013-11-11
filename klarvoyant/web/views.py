@@ -135,5 +135,19 @@ class NephrocareView(View):
         }
         return render(request, 'nephrocare.html', context)
         
-        
+class FerticareView(View):
+
+    def get(self, request):
+        context = {
+            'menu_obj': menu_obj,
+        }
+        return render(request, 'ferticare.html', context)        
+
+class FharmacareView(View):
+
+    def get(self, request):
+        context = {
+            'menu_obj': menu_obj,
+        }
+        return render(request, 'fharmacare.html', context)        
 
