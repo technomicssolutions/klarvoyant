@@ -126,5 +126,11 @@ class ContactUsView(View):
                     'logo': logo
                 }
         return render(request, 'contact_us.html', context)
+
+class NephrocareView(View):
+
+    def get(self, request):
+        return render(request, 'nephrocare.html', {})
+        
         
 

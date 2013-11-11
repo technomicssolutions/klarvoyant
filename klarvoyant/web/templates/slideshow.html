@@ -4,11 +4,11 @@
         {% if slideshow %}
             {% for slide in slideshow.slide_set.all %}
                 <img src="/site_media/{{ slide.image }}" width="1550" height="477">
-                <div id="slogan" >
+                <!-- <div id="slogan" >
                     {% autoescape off %}
                         {{ slide.text | safe }} 
                     {% endautoescape %} 
-                </div>   
+                </div>   --> 
             {% endfor %}
         {% endif %}
     </div>
