@@ -5,6 +5,7 @@ body {
 .header {
     width: 100%;
     height: 100px;
+    position: relative;
 }
 .header .menus {
     width: auto;
@@ -112,7 +113,7 @@ ul.errorlist li {
     height: 458px;
     background-color: #373739;
     color: white;
-    position: absolute;
+    position: relative;
     left: 0;    
 }
 .footer #footer_below {
@@ -162,13 +163,13 @@ ul.errorlist li {
 
 .footer #testimonial_bg .footer_links ul a{
     text-decoration: none;
-    color: #1D5073;
+    color: #FFFFFF;
     font-weight: bold;
     font-size: 13px;
 } 
 .footer #testimonial_bg .footer_links ul a:hover {
     text-decoration: underline;
-    color: #FFFFFF;
+    color: #B62721;
 } 
 
 .overTxtLabel { 
@@ -195,7 +196,7 @@ ul.errorlist li {
     width: 100%;
     height: 255px;
     left: 0;
-    position: absolute;
+    position: relative;
 }
 
 #home_page .content {
@@ -377,4 +378,39 @@ input[type="button"]::-moz-focus-inner,
 input[type="submit"]::-moz-focus-inner,
 input[type="file"] > input[type="button"]::-moz-focus-inner {
     border: none;
+}
+
+.absolute_header {
+    border: 1px solid #FF0000;
+    height: 50px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+.absolute_header ul {
+    width: 370px;
+    margin: auto;
+    height: 50px;
+    padding: 0;
+}
+.absolute_header ul li {
+    display: block;
+    float: left;
+}
+
+.absolute_header ul li a{
+    display: block;
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #000;
+    opacity: 0.5;
+    width: 100px;
+    border-radius: 0px 0px 15px 15px;
+    margin-left: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
 }
