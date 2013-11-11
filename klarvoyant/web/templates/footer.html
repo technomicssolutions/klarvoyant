@@ -1,13 +1,15 @@
 
 <div id="testimonial_bg" >
     <div class="footer_links">
-        {% for menu in menu_obj %}                        
-            <ul><a href="{% url 'render_menupage' menuslug=menu.slug %}">{{ menu.title }}</a>           
-                {% for submenu in menu.submenu_set.all %}
-                    <li><a href="{% url 'render_submenupage' menu_slug=menu.slug submenuslug=submenu.slug %}">{{ submenu.title }}</a></li>
-                {% endfor %}                    
-            </ul>                        
-        {% endfor %}
+        <div class="footer_menus">
+            {% for menu in menu_obj %}                        
+                <ul><a href="{% url 'render_menupage' menuslug=menu.slug %}">{{ menu.title }}</a>           
+                    {% for submenu in menu.submenu_set.all %}
+                        <li><a href="{% url 'render_submenupage' menu_slug=menu.slug submenuslug=submenu.slug %}">{{ submenu.title }}</a></li>
+                    {% endfor %}                    
+                </ul>                        
+            {% endfor %}
+        </div>
     </div>
     <div class="clear"></div>
 </div>

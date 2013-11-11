@@ -110,7 +110,7 @@ ul.errorlist li {
     margin: auto;
     height: auto;
     width: 100%;
-    height: 458px;
+    height: 100px;
     background-color: #373739;
     color: white;
     position: relative;
@@ -136,16 +136,22 @@ ul.errorlist li {
 
 .footer #testimonial_bg {
     width: 100%;
-    height: 350px;
+    height: 50px;
     background-image: url(images/TestimonialsBg.jpg);
     background-repeat: no-repeat;
     display: block;
     position: relative;
     left: 0;
 }
+.footer #testimonial_bg .footer_links .footer_menus {
+    height: 35px;
+    margin: auto;
+    width: 810px;
+    padding-top: 10px;
+}
 .footer #testimonial_bg .footer_links {
     width: 1024px;
-    min-height: 300px;
+    min-height: 35px;
     height: auto;
     margin: auto;
 }
@@ -183,7 +189,7 @@ ul.errorlist li {
     margin: auto;
 }
 .container .content {
-    min-height: 300px;
+    min-height: 500px;
     font-size: 13px;
     text-align: justify;
     color: #000000;
@@ -382,7 +388,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 
 .absolute_header {
-    border: 1px solid #FF0000;
     height: 50px;
     position: absolute;
     top: 100%;
@@ -391,7 +396,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 .absolute_header ul {
-    width: 370px;
+    width: 375px;
     margin: auto;
     height: 50px;
     padding: 0;
@@ -414,10 +419,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
-}
-
-#manufacturing .container .content {
-    height: 500px;
 }
 #manufacturing .container .content .right_image {
     display: block;
@@ -444,11 +445,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 #manufacturing .banner_image img {
     margin: auto;
 }
-#manufacturing .manufacturing_head {
-    color: #164751;
-    font: bold 15px/30px "Trebuchet MS";
-}
-#cro .cro_head {
+.content_head {
     color: #164751;
     font: bold 15px/30px "Trebuchet MS";
 }
@@ -464,9 +461,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     height: auto;
     margin: 0 0 0 15px;
 }
-#cro .container .content {
-    height: 735px;
-}
+
 #cro .container .content .left_contents p {
     color: #3C3C3C;
     font-family: "Trebuchet MS";
@@ -477,54 +472,41 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     font-family: "Trebuchet MS";
     color: #3C3C3C;
 } 
+#consulting .consulting_contents {
+    width: auto;
+    height: 350px;
+    margin: auto;
+}
 #consulting .left_contents {
     float: left;
     width: 49%;
-    height: auto;
+    height: 350px;
 }
 #consulting .container .content .right_image {
     display: block;
     float:right;
     width: 49%;
-    height: auto;
+    height: 350px;
     margin: 0 0 0 15px;
 }
-#consulting .container .content {
-    height: 675px;
-}
-#consulting .consulting_head {
-    color: #164751;
-    font: bold 15px/30px "Trebuchet MS";
-}
-#core_values .container .content {
-    height: 1080px;
-}
-#core_values .core_values_head {
-    color: #164751;
-    font: bold 15px/30px "Trebuchet MS";
-}
+
 #core_values .container .content p {
     color: #3C3C3C;
     font-family: "Trebuchet MS";
     margin-top: 0;
+    margin-left: 20px;
 }
-#core_values .container .content .contents .content_top p {
-    color: #3C3C3C;
-    font-family: "Trebuchet MS";
-    margin-top: 0;
+#core_values .container .content .core_values_contents .content_top {
+    margin-left: 20px;
 }
-#core_values .container .content .contents .content_top ul li {
-    list-style: none;
-    font-weight: normal;
-    font-family: "Trebuchet MS";
-    color: #3C3C3C;
+#core_values .container .content {
+    color: #595858;
+    font: 13px/18px "Trebuchet MS";
+    padding: 3px 15px;
+    text-align: justify;
+    text-decoration: none;
 }
-#core_values .container .content .contents .content_top ul li h4 {
-    margin: 3px;
-}
-#scientific_info .contents {
-    height: 600px;
-}
+
 #scientific_info .info_contents ul {
     display: block;
     height: 21px;
@@ -637,5 +619,12 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 #scientific_info .news_div h2{
     color: #164751;
     font: bold 15px/30px "Trebuchet MS";
+}
+#home_page .home_contents .home_page_contents { 
+    color: #595858;
+    font: 13px/18px "Trebuchet MS";
+    padding: 3px 15px;
+    text-align: justify;
+    text-decoration: none;
 }
 
