@@ -609,4 +609,5 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 .inner_content {
     margin-left: 20px;
+    margin-right: 20px;
 }
