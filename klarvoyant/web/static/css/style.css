@@ -71,7 +71,7 @@ body {
     font-size: 12px;
 }
 .header .contact_no {
-    background-image: url(images/telephone.png);
+    background-image: url(/static/images/telephone.png);
     background-repeat: no-repeat;
     background-position: left center;
     display: block;
@@ -137,7 +137,7 @@ ul.errorlist li {
 .footer #testimonial_bg {
     width: 100%;
     height: 50px;
-    background-image: url(images/TestimonialsBg.jpg);
+    /*background-image: url(/static/images/TestimonialsBg.jpg);*/
     background-repeat: no-repeat;
     display: block;
     position: relative;
@@ -194,6 +194,8 @@ ul.errorlist li {
     text-align: justify;
     color: #000000;
     margin-bottom: 30px;
+    color: #595858;
+    font: 13px/18px "Trebuchet MS";
 }
 .container .content a{
     text-decoration: none;
@@ -315,6 +317,13 @@ ul.errorlist li {
     text-decoration: none;
     color: red;
 }
+.contactus_anchor {
+    color: #595858;
+    font: 13px/18px "Trebuchet MS";
+    padding: 2px 7px;
+    text-align: justify;
+    text-decoration: none;
+}
 #contactus .banner {
     background: url(images/banners/contacts.png) no-repeat;
 }
@@ -322,6 +331,8 @@ ul.errorlist li {
     width: 100%;
     height: auto;
     margin-bottom: 30px;
+    font: 13px/18px "Trebuchet MS";
+    padding: 2px 7px;
 }
 #contactus .container .content #contact_us {
     width: 50%;
@@ -353,7 +364,7 @@ ul.errorlist li {
 }
 #contactus .container .content #contact_us form input[type='submit'] {
     width: 107px;
-    background-image: url(images/sendButton.jpg);
+    background-image: url(/static/images/sendButton.jpg);
     background-repeat: no-repeat;
     height: 39px;
     margin: 10px 0 0 0;
@@ -575,11 +586,13 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     color: #164751;
     font: bold 15px/30px "Trebuchet MS";
 }
+
 #home_page .home_contents .home_page_contents { 
-    color: #595858;
-    font: 13px/18px "Trebuchet MS";
     padding: 3px 15px;
     text-align: justify;
     text-decoration: none;
+}
+.top_content {
+    margin-left: 15px;
 }
 
