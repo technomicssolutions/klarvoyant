@@ -130,7 +130,10 @@ class ContactUsView(View):
 class NephrocareView(View):
 
     def get(self, request):
-        return render(request, 'nephrocare.html', {})
+        context = {
+            'menu_obj': menu_obj,
+        }
+        return render(request, 'nephrocare.html', context)
         
         
 

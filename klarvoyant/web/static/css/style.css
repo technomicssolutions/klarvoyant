@@ -187,6 +187,7 @@ ul.errorlist li {
     width: 1024px;
     height: 100%;
     margin: auto;
+    box-shadow: 0 5px 5px 3px #CCCCCC;
 }
 .container .content {
     min-height: 500px;
@@ -483,10 +484,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     font-family: "Trebuchet MS";
     color: #3C3C3C;
 } 
-#consulting .consulting_contents {
+#consulting .inner_content {
     width: auto;
     height: 350px;
-    margin: auto;
 }
 #consulting .left_contents {
     float: left;
@@ -507,7 +507,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     margin-top: 0;
     margin-left: 20px;
 }
-#core_values .container .content .core_values_contents .content_top {
+#core_values .container .content .inner_content .content_top {
     margin-left: 20px;
 }
 #core_values .container .content {
@@ -587,11 +587,26 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     font: bold 15px/30px "Trebuchet MS";
 }
 
-#home_page .home_contents .home_page_contents { 
+#home_page .inner_content .home_page_contents { 
     padding: 3px 15px;
     text-align: justify;
     text-decoration: none;
 }
 .top_content {
     margin-left: 15px;
+}
+ .left_section {
+    float: left;
+    width: 59%;
+    height: auto;
+}
+.right_section {
+    display: block;
+    float:left;
+    width: 39%;
+    height: auto;
+    margin: 0 0 0 15px;
+}
+.inner_content {
+    margin-left: 20px;
 }

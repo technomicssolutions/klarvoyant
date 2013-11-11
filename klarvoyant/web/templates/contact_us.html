@@ -10,71 +10,73 @@
 
 
 {% block content %}
-    <h2 class="content_head">Contact Us</h2>
-    <div id="contactus_section">
-        <p> For more information regarding our IT services please contact us.</p>
-        <div id="contactus" >
-            <strong>
-                Klaryoyant Biogenics Pvt Ltd,
+    <div class="inner_content">
+        <h2 class="content_head">Contact Us</h2>
+        <div id="contactus_section">
+            <p> For more information regarding our IT services please contact us.</p>
+            <div id="contactus" >
+                <strong>
+                    Klaryoyant Biogenics Pvt Ltd,
+                    <br>
+                    33/7 ,BR Complex,
+                    <br>
+                    CP Ramasamy Road
+                    <br>
+                    Alwarpet,Chennai-600018
+                    <br>
+                </strong>
+                Tel:
+                <u> +91 44 45520030</u>
                 <br>
-                33/7 ,BR Complex,
+                Fax:
+                <u>+9144 24982039</u>
                 <br>
-                CP Ramasamy Road
                 <br>
-                Alwarpet,Chennai-600018
+                E-mail:
+                <a target="_blank" class="contactus_anchor" href="mailto:info@klarvoyant.com">info@klarvoyant.com</a>
                 <br>
-            </strong>
-            Tel:
-            <u> +91 44 45520030</u>
-            <br>
-            Fax:
-            <u>+9144 24982039</u>
-            <br>
-            <br>
-            E-mail:
-            <a target="_blank" class="contactus_anchor" href="mailto:info@klarvoyant.com">info@klarvoyant.com</a>
-            <br>
-              Web :
-            <a target="_blank" class="contactus_anchor" href="http://klarvoyant.in/"> www.klarvoyant.in</a>
-            <br>
-            <br>
-            <br>
-            <strong>
-                Klarvoyant Global HQ
+                  Web :
+                <a target="_blank" class="contactus_anchor" href="http://klarvoyant.in/"> www.klarvoyant.in</a>
                 <br>
-                1739 S. Douglass Rd, Suite H
                 <br>
-                Anaheim, CA 92806
                 <br>
-            </strong>
-            Tel:
-            <u>714-938-0233</u>
-            <br>
-            Fax:
-            <u>714-938-0130</u>
-            <br>
-            Toll Free:
-            <u>866-898-2707</u>
-            <br>
-            <br>
-            E-mail:
-            <a target="_blank" class="contactus_anchor" href="mailto:klarvoyantusausa@klarvoyant.com">klarvoyantusausa@klarvoyant.com</a>
-            <br>
-              Web :
-            <a target="_blank" class="contactus_anchor" href="http://klarvoyantusa.com/">www.klarvoyantusa.com</a>
+                <strong>
+                    Klarvoyant Global HQ
+                    <br>
+                    1739 S. Douglass Rd, Suite H
+                    <br>
+                    Anaheim, CA 92806
+                    <br>
+                </strong>
+                Tel:
+                <u>714-938-0233</u>
+                <br>
+                Fax:
+                <u>714-938-0130</u>
+                <br>
+                Toll Free:
+                <u>866-898-2707</u>
+                <br>
+                <br>
+                E-mail:
+                <a target="_blank" class="contactus_anchor" href="mailto:klarvoyantusausa@klarvoyant.com">klarvoyantusausa@klarvoyant.com</a>
+                <br>
+                  Web :
+                <a target="_blank" class="contactus_anchor" href="http://klarvoyantusa.com/">www.klarvoyantusa.com</a>
 
-        </div> 
-        <div id="contact_us" >
-            {% if form %}
-                {% if message %}
-                    <h1> {{message }}</h1>
+            </div> 
+            <div id="contact_us" >
+                {% if form %}
+                    {% if message %}
+                        <h1> {{message }}</h1>
+                    {% endif %}
+                    <form id="contact_form" action="{% url 'contactus' %}" method="post">{% csrf_token %}
+                        {{ form}} 
+                        <input type="submit" name="send" id="send" value="">
+                    </form>
                 {% endif %}
-                <form id="contact_form" action="{% url 'contactus' %}" method="post">{% csrf_token %}
-                    {{ form}} 
-                    <input type="submit" name="send" id="send" value="">
-                </form>
-            {% endif %}
+            </div>
+            <div class="clear"></div>
         </div>
-        <div class="clear"></div>
     </div>
 {% endblock %}
