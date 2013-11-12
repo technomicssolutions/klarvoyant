@@ -174,14 +174,8 @@ ul.errorlist li {
     font-size: 13px;
 } 
 .footer #testimonial_bg .footer_links ul a:hover {
-    text-decoration: underline;
     color: #B62721;
 } 
-
-.overTxtLabel { 
-    color: #FFF; 
-    top: 15px;
-}
 
 .container {
     width: 1024px;
@@ -192,11 +186,13 @@ ul.errorlist li {
 .container .content {
     min-height: 500px;
     font-size: 13px;
-    text-align: justify;
     color: #000000;
     margin-bottom: 30px;
     color: #595858;
     font: 13px/18px "Trebuchet MS";
+}
+p{
+    text-align: justify;
 }
 .container .content a{
     text-decoration: none;
@@ -610,4 +606,11 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .inner_content {
     margin-left: 20px;
     margin-right: 20px;
+}
+.footer_menus {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#fharma_care .top_content p {
+    line-height: 30px;
 }

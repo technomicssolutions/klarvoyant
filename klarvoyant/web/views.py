@@ -108,6 +108,7 @@ class ContactUsView(View):
                 contact_us = Contactus()
                 contact_us.name = data_dict_form['name']
                 contact_us.email_id = data_dict_form['email_id']
+                contact_us.mobile = data_dict_form['mobile']
                 contact_us.message = data_dict_form['message']
                 contact_us.subject = data_dict_form['subject']
                 contact_us.save();

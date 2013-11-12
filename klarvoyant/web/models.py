@@ -98,6 +98,7 @@ class Submenu(Dates):
 class Contactus(Dates):
     name = models.CharField('Name', max_length=80)
     email_id = models.EmailField('Email', max_length = 120)
+    mobile = models.CharField('Mobile No', max_length = 50)
     subject = models.CharField('Subject', max_length = 100)
     message = models.TextField('Message')
     
@@ -108,7 +109,7 @@ class Contactus(Dates):
         root_url = 'http://%s'%(Site.objects.get_current().domain)
         subject = self.subject
         # contact_us/subject = 'Contact me'. self.name
-        message = render_to_string('contactus_notification.html', {
+        message = render_to_string('email/contactus_notification.html', {
             'name': self.name,
             'email': self.email_id,
             'content': self.message,

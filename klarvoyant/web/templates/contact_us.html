@@ -68,7 +68,7 @@
             <div id="contact_us" >
                 {% if form %}
                     {% if message %}
-                        <h1> {{message }}</h1>
+                        <h2 class="content_head"> {{message }}</h2>
                     {% endif %}
                     <form id="contact_form" action="{% url 'contactus' %}" method="post">{% csrf_token %}
                         {{ form}} 

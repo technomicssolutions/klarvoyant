@@ -7,6 +7,6 @@ class ContactUsForm(ModelForm):
 
     class Meta:
         model = Contactus
-        fields = ('name', 'email_id','subject' , 'message')
+        fields = ('name', 'email_id', 'mobile', 'subject' , 'message')
         
 

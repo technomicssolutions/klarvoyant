@@ -5,7 +5,7 @@ from adminthumnail import AdminImageWidget
 from django.views.generic.list import ListView
 
 class ContactusAdmin(admin.ModelAdmin):
-    list_display = ('name', 'email_id', 'subject', 'message')
+    list_display = ('name', 'email_id', 'mobile', 'subject', 'message')
 
 class SlideInline(admin.TabularInline):
     model = Slide
