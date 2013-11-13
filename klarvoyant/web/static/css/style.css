@@ -450,8 +450,10 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     display: block;
     margin-bottom: 15px;
 }
-#manufacturing .banner_image img {
+.banner_image img {
     margin: auto;
+    width: 1024px;
+    height: 240px;
 }
 .content_head {
     color: #164751;
@@ -613,4 +615,13 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 #fharma_care .top_content p {
     line-height: 30px;
+}
+.consulting_contents {
+    display: block;
+    margin: auto;
+    width: 645px;
+    height: 375px;
+}
+.consulting_contents img {
+    margin-right: 52px;
 }
